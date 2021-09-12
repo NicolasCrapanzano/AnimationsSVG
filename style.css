@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+.estrella1{
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: estrellas linear 5s infinite alternate;
+}
+.estrella2{
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: estrellas2 linear 3s infinite alternate;
+}
+.estrella3{
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: estrellas2 linear 5s infinite alternate;
+}
+.estrella4{
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: estrellas3 linear 6s infinite alternate;
+}
+#peloAdelante{
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: respiracion 1.5s ease-in-out infinite alternate;
+}
+#peloAtras{
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: respiracion 1.5s ease-in-out infinite alternate;
+}
+#cabeza{
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: respiracion 1.5s ease-in-out infinite alternate;
+}
+#brazoIzquierdo{
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: respiracionTorso 1.5s ease-in-out infinite alternate;
+}
+#brazoDerecho{
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: respiracionTorso 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes respiracion {
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(7%);
+    }
+}
+@keyframes respiracionTorso {
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(2%);
+    }
+}
+
+@keyframes estrellas{
+    from{
+        transform: scale(1);
+        
+    }
+    to{
+        transform: scale(2.5);
+        
+    }
+}
+@keyframes estrellas2{
+    from{
+        transform: scale(1);
+        
+    }
+    to{
+        transform: scale(2.7);
+        
+    }
+}
+@keyframes estrellas3{
+    from{
+        transform: scale(0.7);
+        
+    }
+    to{
+        transform: scale(3);
+        
+    }
+}
